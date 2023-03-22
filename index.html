@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==============================================================-->
+    <meta property="og:title" content="Vermelhinho">
+    <meta property="og:description" content="Soluções Gráficas Inteligentes">
+    <meta property="og:image" content="https://wilgnerjr.github.io/empresa/img/LogoVermelhinho.png">
+    <meta property="og:url" content="https://wilgnerjr.github.io/empresa">
+    <meta property="og:type" content="website">
+    <!--==============================================================-->
+    <link rel="shortcut icon" href="img/LogoVermelhinho.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/038682e29c.css" crossorigin="anonymous">
+    <title>Vermelhinho</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="logoMobile"></div>
+            <div class="horarioDeFuncionamento">
+                <a href="#" class="logo">Vermelhinho</a>
+                <p>De Seg à Sex das 07:30h às 18:00h<br>& Sáb das 08:00h às 11:30h</p>
+                <p id="mensagem" class=""></p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" onclick="esconder()">Inicio</a></li>
+                <li><a href="#empresa" onclick="esconder()">Empresa</a></li>
+                <li><a href="#servicos" onclick="esconder()">Serviços</a></li>
+                <li><a href="#contato" onclick="esconder()">Contato</a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="apresentacao">
+            <img src="./img/LogoVermelhinho.png" alt="Logo Vermelhinho" class="logoApresentacao">
+            <div class="textApresentacao">
+                <strong id="efeito"></strong>
+            </div>
+        </section>
+        <!-- <section id="empresa" class="empresa">
+            <h2>Empresa</h2>
+            <p>
+                Tudo começou quando Sr. Flávio em 1983 abriu uma pequena copiadora em uma sala no porão do antigo Cine Cuiabá mas sempre com um grande desejo de crescimento e muitos sonhos no papel para serem realizados. Em 1989 ganhou uma grande parceira, Sra. Vera, que com muito esforço, muito empenho, perseverança e visão empreendedora, fez a empresa evoluir, conquistando espaço e reconhecimento no mercado. Com mais de 30 anos de sucesso como fotocopiadora, a Vermelhinho Cópias alcançou com excelência o bom atendimento e o forte comprometimento com prazo e qualidade.
+                <br><br>
+                Expandiu-se também no mercado de gráfica expressa trazendo tecnologia personalizando o serviço prestado sempre com o foco na satisfação de seus clientes, transformando-os em grandes parceiros. Oferecemos diversos tipos de acabamentos, plastificações, encadernações (capa dura – espiral –  wire-o –  contact e parafuso). cópias, impressões, produção de arte, plotagem, scanner, estampas de camisetas, gravações de arquivos em CD e muito mais.
+                <br><br>
+                <strong>A VERMELHINHO CÓPIAS</strong> se localiza na :<br>
+                Avenida Historiador Rubens de Mendonça, 1807
+                <br>
+                Cuiabá-MT
+                <br>
+                Bairro: Bosque da Saúde
+                <br>
+                CEP:78050-000,
+                <br>
+                Telefone (65) 1111-0000
+            </p>
+        </section> -->
+        <section id="servicos" class="servicos">
+            <h2>Conheça Nossos Serviços</h2>
+            <div class="emAlta">
+                <div class="slider">
+                    <div class="slides">
+                        <!-- radio button -->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+            
+                        <div class="slide first">
+                            <img src="https://www.papeiseparede.com.br/5053-thickbox_default/papel-de-parede-3d-preto.jpg.webp" alt="mario">
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.eliane.com/upload/produtos/eliane-silex-preto-po-90x90cm-02.jpg" alt="mario">
+                        </div>
+                        <div class="slide">
+                            <img src="https://img.freepik.com/fotos-premium/textura-de-parede-de-pedra-antiga-de-fundo-preto-e-branco-ou-espaco-de-copia-de-quadro-negro_124507-10565.jpg" alt="mario">
+                        </div>
+                        <div class="slide">
+                            <img src="https://static.vecteezy.com/ti/vetor-gratis/p3/1987871-abstrato-preto-listras-diagonal-fundo-gratis-vetor.jpg" alt="mario">
+                        </div>
+            
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="areaProdutos">
+                <div class="produto">
+                    <div class="produto1"></div>
+                    <label for="produto1">Cartão De Visita</label>
+                </div>
+                <div class="produto">
+                    <div class="produto2"></div>
+                    <label for="produto2">Cracha</label>
+                </div>
+                <div class="produto">
+                    <div class="produto3"></div>
+                    <label for="produto3">Banner</label>
+                </div>
+                <div class="produto">
+                    <div class="produto4"></div>
+                    <label for="produto4">Encadernação</label>
+                </div>
+                <div class="produto">
+                    <div class="produto5"></div>
+                    <label for="produto5">Carimbos</label>
+                </div>
+                <div class="produto">
+                    <div class="produto6"></div>
+                    <label for="produto6">Plastificação</label>
+                </div>
+                <div class="produto">
+                    <div class="produto7"></div>
+                    <label for="produto7">Cópia</label>
+                </div>
+                <div class="produto">
+                    <div class="produto8"></div>
+                    <label for="produto8">Scanner</label>
+                </div>
+                <div class="produto">
+                    <div class="produto9"></div>
+                    <label for="produto9">Plotagem</label>
+                </div>
+                <div class="produto">
+                    <div class="produto10"></div>
+                    <label for="produto10">Camiseta</label>
+                </div>
+                <div class="produto">
+                    <div class="produto11"></div>
+                    <label for="produto11">Adesivo</label>
+                </div>
+                <div class="produto">
+                    <div class="produto12"></div>
+                    <label for="produto12">Folder/Panfleto</label>
+                </div>
+                <div class="produto">
+                    <div class="produto13"></div>
+                    <label for="produto13">Convites</label>
+                </div>
+                <div class="produto">
+                    <div class="produto14"></div>
+                    <label for="produto14">Cardápio</label>
+                </div>
+                <div class="produto">
+                    <div class="produto15"></div>
+                    <label for="produto15">Credencial</label>
+                </div>
+                <div class="produto">
+                    <div class="produto16"></div>
+                    <label for="produto16">Pasta C/ Bolso</label>
+                </div>
+                <div class="produto">
+                    <div class="produto17"></div>
+                    <label for="produto17">Display de Mesa</label>
+                </div>
+                <div class="produto">
+                    <div class="produto18"></div>
+                    <label for="produto18">Calendário</label>
+                </div>
+                <div class="produto">
+                    <div class="produto19"></div>
+                    <label for="produto19">Fichas</label>
+                </div>
+                <div class="produto">
+                    <div class="produto20"></div>
+                    <label for="produto20">Blocos de Comanda</label>
+                </div>
+                <div class="produto">
+                    <div class="produto21"></div>
+                    <label for="produto21">Caixa Personalizada</label>
+                </div>
+                <div class="produto">
+                    <div class="produto22"></div>
+                    <label for="produto22">Chaveiros</label>
+                </div>
+                <div class="produto">
+                    <div class="produto23"></div>
+                    <label for="produto23">Copos Personalizados</label>
+                </div>
+                <div class="produto">
+                    <div class="produto24"></div>
+                    <label for="produto24">impressões 3D</label>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="contato">
+            <h2>contato</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ea accusantium dicta id optio enim culpa consectetur, suscipit magni sit, adipisci libero eaque cupiditate earum reprehenderit! Aperiam tempore eveniet vel?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae maxime dolorum odio est aperiam, similique repellat vitae cupiditate explicabo natus eos illum voluptatum rem sed nihil facere quae veniam cum!
+            </p>
+        </section>
+        <a href="https://wa.me/556511110000?text=Olá%20Bom%20Dia,%20Gostaria%20de%20fazer%20um%20orçamento." target="_blank">
+            <i class="fa-brands fa-whatsapp" alt='icone do whatsapp para entrar em contato'></i>
+        </a>
+    </main>
+    <footer>
+        <div class="separacaoDasRedesComMaps">
+            <div class="redesSociais">
+                <h3>CONTATE-NOS</h3>
+                <a href="#">
+                    <i class="fa-brands fa-instagram" alt="icone do facebook com link de redirecionamento"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp" alt='icone do whatsapp para entrar em contato'></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-facebook" alt="icone do facebook com link de redirecionamento"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </div>
+            <div class="horarioDeFuncionamentofooter">
+                <h2>HORÁRIO DE FUNCIONAMENTO</h2>
+                <p>De Segunda à Sexta<br>
+                    07:30h às 18:00h<br>
+                    & Sábado<br>
+                    08:00h às 11:30h</p>
+            </div>       
+        </div>
+        <div class="geolocalizacao">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.1236020229044!2d-56.08282798572606!3d-15.585043621991108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db1af2986e783%3A0x69d4a060dcc3834!2sVermelhinho%20C%C3%B3pias!5e0!3m2!1spt-BR!2sus!4v1679249967499!5m2!1spt-BR!2sus" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/estadoDeFuncionamento.js"></script>
+    <script src="js/textApresentacao.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="https://kit.fontawesome.com/038682e29c.js" crossorigin="anonymous"></script>
+</body>
+</html>
