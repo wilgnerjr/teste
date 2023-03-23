@@ -240,13 +240,85 @@ main{
             margin-bottom: 0;
         }
         .emAlta{
-            margin: 0 auto;
-            padding: 0;
-            max-width: 700px;
+            width: 100%;
             height: 100%;
+            background-image: linear-gradient(72des, #1a397b,35% , #a0afe2,#597DF1 99% );
+            position: relative;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            h3{
+                position: absolute;
+                bottom: 180px;
+                background-color: rgba(0, 0, 0, 0.829);
+                width: 300px;
+                height: 30px;
+                border-radius: 10px 10px 0px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
+            .content{
+                width: 300px;
+                height: 200px;
+                border-radius: 10px;
+                margin: 10px auto;
+                overflow: hidden;
+                // position: relative;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+                box-shadow: 5px 5px 5px 0px  rgba( 0, 0, 0, 0.75);
+                .slides{
+                    display: flex;
+                    width: 400%;
+                    height: 100%;
+                    input{
+                        display: none;
+                    }
+                    #slide1:checked ~ .imgS1{
+                        margin-left: 0;
+                    }
+                    #slide2:checked ~ .imgS1{
+                        margin-left: -25%;
+                    }
+                    #slide3:checked ~ .imgS1{
+                        margin-left: -50%;
+                    }
+                    #slide4:checked ~ .imgS1{
+                        margin-left: -75%;
+                    }
+                }
+                .slide{
+                    width: 25%;
+                    transition: .6s;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        
+                    }
+                }
+            }
+            .navigation{
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                display: flex;
+                transform: translateX(-50%);
+                .bar{
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    border: 2px solid rgb(255, 255, 255);
+                    margin: 6px;
+                    cursor: pointer;
+                    transform: .5s ease;
+                    &:hover{
+                        background-color: rgb(255, 159, 159);
+                    }
+                }
+            }
         }
         .areaProdutos{
             max-width: 750px;
@@ -596,6 +668,9 @@ footer{
             }
         }
         .servicos{
+            h2{
+                font-size: 1.5rem;
+            }
             .areaProdutos{
                 max-width: 500px;
                 .produto{
