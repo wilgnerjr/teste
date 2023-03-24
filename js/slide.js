@@ -1,4 +1,4 @@
-let count = 1;
+var count = 1;
 
 setInterval( function(){
     document.getElementById('slide' + count).checked = true;
