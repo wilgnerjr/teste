@@ -40,10 +40,29 @@ function loop () {
       }
     }
   }
-  const spedUp = Math.random() * (10 -50) + 30
-  const normalSpeed = Math.random() * (10 -50) + 100
+  const spedUp = Math.random() * (10 -50) + 100
+  const normalSpeed = Math.random() * (10 -50) + 60
   const time = isEnd ? 2000 : isDeleting ? spedUp : normalSpeed
   setTimeout(loop, time)
 }
 
 loop()
+
+
+// ========================================================================
+// window.addEventListener('load', function() {
+//   setTimeout(function() {
+//     document.getElementById('telaDeAbertura').t
+//     document.getElementById('telaDeAbertura').style.display = 'none';
+//   }, 2500);
+  
+// });
+
+// ///////////////////////////////////////////
+window.onload = function() {
+  var telaDeAbertura = document.getElementById('telaDeAbertura');
+  telaDeAbertura.style.opacity = 0;
+  setTimeout(function(){
+    telaDeAbertura.style.display = 'none';
+  }, 4500);
+};

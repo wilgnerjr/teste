@@ -15,6 +15,42 @@ html,body{
     color: $Preto;
     background-color: $Branco;
     scroll-behavior: smooth;
+    #telaDeAbertura {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        transition: opacity 5s ease-in-out;
+        z-index: 9999;
+      }
+      
+      #telaDeAbertura img,h1 {
+        color: white;
+        font-size: 3em;
+        text-align: center;
+        opacity: 0;
+        animation: aparicao 1s ease-out forwards;
+      }
+    
+      @keyframes aparicao {
+        0%{
+            opacity: 0.0;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
 }
 // =========================NAV===========================
 
