@@ -35,18 +35,16 @@ html,body{
             text-align: center;
             opacity: 0;
             animation: aparicao 1s ease-out forwards;
-            transition: 2s;
+            transition: 2.5s;
+            h1 {
+                color: white;
+                font-size: 3em;
+                text-align: center;
+                opacity: 0;
+                animation: aparicao 1s ease-out forwards;
+              }
         }
       }
-
-      h1 {
-        color: white;
-        font-size: 3em;
-        text-align: center;
-        opacity: 0;
-        animation: aparicao 1s ease-out forwards;
-      }
-    
       @keyframes aparicao {
         0%{
             opacity: 0.0;
