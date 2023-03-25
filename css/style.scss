@@ -29,9 +29,17 @@ html,body{
         opacity: 1;
         transition: opacity 5s ease-in-out;
         z-index: 9999;
+        #iagem{
+            color: white;
+            font-size: 3em;
+            text-align: center;
+            opacity: 0;
+            animation: aparicao 1s ease-out forwards;
+            transition: 2s;
+        }
       }
-      
-      #telaDeAbertura img,h1 {
+
+      h1 {
         color: white;
         font-size: 3em;
         text-align: center;

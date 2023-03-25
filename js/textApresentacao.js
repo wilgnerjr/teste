@@ -54,6 +54,11 @@ loop()
 window.onload = function() {
   var telaDeAbertura = document.getElementById('telaDeAbertura');
   telaDeAbertura.style.opacity = 0;
+  var iagem = document.getElementById('iagem');
+  iagem.style.transform = 'translate(0px , 72px) scale(0.50)';
+
+  //  transform: translate(0px , 70px) scale(0.67);
+
   setTimeout(function(){
     telaDeAbertura.style.display = 'none';
   }, 4500);

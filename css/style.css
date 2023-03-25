@@ -28,7 +28,15 @@ html #telaDeAbertura, body #telaDeAbertura {
   transition: opacity 5s ease-in-out;
   z-index: 9999;
 }
-html #telaDeAbertura img, html h1, body #telaDeAbertura img, body h1 {
+html #telaDeAbertura #iagem, body #telaDeAbertura #iagem {
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  opacity: 0;
+  animation: aparicao 1s ease-out forwards;
+  transition: 2s;
+}
+html h1, body h1 {
   color: white;
   font-size: 3em;
   text-align: center;
