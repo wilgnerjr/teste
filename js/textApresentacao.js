@@ -50,15 +50,7 @@ loop()
 
 
 // ========================================================================
-// window.addEventListener('load', function() {
-//   setTimeout(function() {
-//     document.getElementById('telaDeAbertura').t
-//     document.getElementById('telaDeAbertura').style.display = 'none';
-//   }, 2500);
-  
-// });
 
-// ///////////////////////////////////////////
 window.onload = function() {
   var telaDeAbertura = document.getElementById('telaDeAbertura');
   telaDeAbertura.style.opacity = 0;
