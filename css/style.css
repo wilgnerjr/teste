@@ -34,7 +34,7 @@ html #telaDeAbertura #iagem, body #telaDeAbertura #iagem {
   text-align: center;
   opacity: 0;
   animation: aparicao 1s ease-out forwards;
-  transition: 2.5s;
+  transition: 1.5s;
 }
 html #telaDeAbertura #iagem h1, body #telaDeAbertura #iagem h1 {
   color: white;

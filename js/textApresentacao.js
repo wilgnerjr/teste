@@ -51,15 +51,45 @@ loop()
 
 // ========================================================================
 
+// window.onload = function() {
+//   var body = document.getElementById('esse');
+//   body.style.width = '100%';
+//   body.style.overflow = 'hidden';
+//   var telaDeAbertura = document.getElementById('telaDeAbertura');
+//   telaDeAbertura.style.opacity = 0;
+//   var iagem = document.getElementById('iagem');
+//   iagem.style.transform = 'translate(0px , 70px) scale(0.50)';
+//   //  transform: translate(0px , 70px) scale(0.67);
+//   setTimeout(function(){
+//     telaDeAbertura.style.display = 'none';
+//     body.style.overflow = 'visible';
+//   }, 4000);
+
+// };
+
+
 window.onload = function() {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
+  continuarExecucao();
+};
+
+function continuarExecucao() {
+
+  // Coloque aqui o código que você quer executar depois da atualização da página
+  var body = document.getElementById('esse');
+  body.style.width = '100%';
+  body.style.overflow = 'hidden';
   var telaDeAbertura = document.getElementById('telaDeAbertura');
   telaDeAbertura.style.opacity = 0;
   var iagem = document.getElementById('iagem');
   iagem.style.transform = 'translate(0px , 70px) scale(0.50)';
-
   //  transform: translate(0px , 70px) scale(0.67);
-
   setTimeout(function(){
     telaDeAbertura.style.display = 'none';
+    body.style.overflow = 'visible';
   }, 4000);
-};
+}
